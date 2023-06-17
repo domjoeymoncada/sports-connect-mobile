@@ -1,4 +1,4 @@
 export default {
-    login: 'Login',
-    profile: 'Profile',
-}
+  login: 'Login',
+  profile: 'Profile',
+};
