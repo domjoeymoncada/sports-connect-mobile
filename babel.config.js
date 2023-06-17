@@ -4,20 +4,20 @@ module.exports = {
     [
       'babel-plugin-root-import',
       {
-        rootPathPrefix: '@',
-        rootPathSuffix: '.',
-      },
-    ],
+        rootPathPrefix: '~',
+        rootPathSuffix: '.'
+      }
+    ]
   ],
   env: {
     production: {
       plugins: [
         'babel-plugin-root-import',
         {
-          rootPathPrefix: '@',
-          rootPathSuffix: '.',
-        },
-      ],
-    },
-  },
+          rootPathPrefix: '~',
+          rootPathSuffix: '.'
+        }
+      ]
+    }
+  }
 };
