@@ -1,11 +1,11 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import {Avatar} from 'react-native-elements';
-import BasicView from '../../shared/BasicView';
+import BasicView from '@/src/shared/components/BasicView';
 import {NavigationProp} from '@react-navigation/native';
-import colors from '../../../colors';
+import colors from '@/src/shared/constants/colors';
 import Highlights from './components/Highlights';
-import ActionButton from './components/ActionButton';
+import ProfileActionButton from './components/ProfileActionButton';
 
 type ProfileScreenProps = {
   navigation: NavigationProp<any, any>;
@@ -51,10 +51,10 @@ const ProfileScreen = ({navigation}: ProfileScreenProps) => (
         alignItems: 'center',
         justifyContent: 'space-evenly',
       }}>
-      <ActionButton iconName="ios-chatbubble-outline" label="Message" />
-      <ActionButton iconName="person-add-outline" label="Invite to club" />
-      <ActionButton iconName="paper-plane-outline" label="Share" />
-      <ActionButton iconName="cog-outline" label="Settings" />
+      <ProfileActionButton iconName="ios-chatbubble-outline" label="Message" />
+      <ProfileActionButton iconName="person-add-outline" label="Invite to club" />
+      <ProfileActionButton iconName="paper-plane-outline" label="Share" />
+      <ProfileActionButton iconName="cog-outline" label="Settings" />
     </View>
     <Text
       style={{

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button, Text, View } from 'react-native';
-import routes from '../../../routes';
+import { Button, View } from 'react-native';
+import routes from '@/src/shared/constants/routes';
 
 const LoginScreen = ({navigation}) => (
     <View>
