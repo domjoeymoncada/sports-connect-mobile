@@ -1,9 +1,9 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import {Avatar} from 'react-native-elements';
-import BasicView from '@/src/shared/components/BasicView';
+import BasicView from '~/src/shared/components/BasicView';
 import {NavigationProp} from '@react-navigation/native';
-import colors from '@/src/shared/constants/colors';
+import colors from '~/src/shared/constants/colors';
 import Highlights from './components/Highlights';
 import ProfileActionButton from './components/ProfileActionButton';
 
