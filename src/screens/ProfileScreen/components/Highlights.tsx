@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import colors from '@/src/shared/constants/colors';
+import colors from '~/src/shared/constants/colors';
 
 const Highlights = ({
   label,

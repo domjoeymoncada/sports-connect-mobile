@@ -15,7 +15,6 @@ const ProfileScreen = ({navigation}: ProfileScreenProps) => (
   <BasicView>
     <View style={{alignItems: 'center', flexDirection: 'column'}}>
       <Avatar
-        size={100}
         rounded
         source={{uri: 'https://picsum.photos/200/300'}}
       />
@@ -52,7 +51,10 @@ const ProfileScreen = ({navigation}: ProfileScreenProps) => (
         justifyContent: 'space-evenly',
       }}>
       <ProfileActionButton iconName="ios-chatbubble-outline" label="Message" />
-      <ProfileActionButton iconName="person-add-outline" label="Invite to club" />
+      <ProfileActionButton
+        iconName="person-add-outline"
+        label="Invite to club"
+      />
       <ProfileActionButton iconName="paper-plane-outline" label="Share" />
       <ProfileActionButton iconName="cog-outline" label="Settings" />
     </View>
