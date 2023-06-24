@@ -12,7 +12,7 @@ const App = () => {
     <NavigationContainer>
       <StackNavigator.Navigator initialRouteName={routes.welcome}>
         <StackNavigator.Screen
-          name={routes.profile}
+          name={routes.welcome}
           component={WelcomeScreen}
         />
         <StackNavigator.Screen
