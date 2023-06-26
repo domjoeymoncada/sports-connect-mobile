@@ -14,6 +14,9 @@ const App = () => {
         <StackNavigator.Screen
           name={routes.welcome}
           component={WelcomeScreen}
+          options={{
+            headerShown: false,
+          }}
         />
         <StackNavigator.Screen
           name={routes.profile}
