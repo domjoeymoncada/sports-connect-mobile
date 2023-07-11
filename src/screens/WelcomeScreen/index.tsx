@@ -50,7 +50,7 @@ const WelcomeScreen = ({navigation}: WelcomeScreenProps) => (
         <BasicButton
           title="Login"
           containerStyle={{marginTop: 36}}
-          onPress={() => navigation.navigate(routes.profile)}
+          onPress={() => navigation.navigate(routes.home)}
         />
         <TouchableOpacity style={{alignItems: 'center', marginTop: 24}}>
           <Text style={{alignContent: 'center'}}>
