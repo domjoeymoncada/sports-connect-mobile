@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import BasicButton from '~/src/shared/components/BasicButton';
+import colors from '~/src/shared/constants/colors';
 
 // Updated once API will be done
 type EventCardProps = {
@@ -29,10 +30,18 @@ const EventCard = ({event}: EventCardProps) => {
   return (
     <View
       style={{
-        borderWidth: 0.5,
         borderRadius: 5,
         padding: 12,
         marginBottom: 14,
+        backgroundColor: colors.white,
+        shadowOffset: {
+          width: 0,
+          height: 30,
+        },
+        shadowColor: colors.black,
+        shadowOpacity: 0.3,
+        shadowRadius: 10,
+        elevation: 5,
       }}>
       <Text style={{fontSize: 20, fontWeight: 'bold'}}>{title}</Text>
       <EventCardDetail icon="ios-person-outline" value={organizer} />

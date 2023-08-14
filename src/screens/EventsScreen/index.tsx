@@ -9,10 +9,10 @@ import {SAMPLE_EVENTS} from '~/src/shared/sample_data/events';
 const EventsScreen = () => {
   return (
     <BasicView>
-      <ScrollView>
+      <ScrollView contentContainerStyle={{paddingHorizontal: 12}}>
         {/* looping 20 times to see how it looks like */}
         {SAMPLE_EVENTS.map(event => (
-          <EventCard event={event}/>
+          <EventCard event={event} />
         ))}
       </ScrollView>
     </BasicView>
