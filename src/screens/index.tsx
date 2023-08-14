@@ -11,7 +11,9 @@ const BottomTabNav = createBottomTabNavigator();
 
 const HomeScreen = () => {
   return (
-    <BottomTabNav.Navigator tabBar={props => <CustomBottomTabBar {...props} />}>
+    <BottomTabNav.Navigator
+      screenOptions={{headerShown: false}}
+      tabBar={props => <CustomBottomTabBar {...props} />}>
       <BottomTabNav.Screen
         name="Events"
         component={EventsScreen}
