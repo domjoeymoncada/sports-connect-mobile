@@ -5,14 +5,16 @@ import {
   createBottomTabNavigator,
   BottomTabNavigationOptions,
 } from '@react-navigation/bottom-tabs';
+import Icon from 'react-native-vector-icons/Ionicons';
 import CustomBottomTabBar from '../shared/components/CustomBottomTabBar';
+import {TouchableOpacity} from 'react-native';
 
 const BottomTabNav = createBottomTabNavigator();
 
 const HomeScreen = () => {
   return (
     <BottomTabNav.Navigator
-      screenOptions={{headerShown: false}}
+      screenOptions={{headerTitleAlign: 'center'}}
       tabBar={props => <CustomBottomTabBar {...props} />}>
       <BottomTabNav.Screen
         name="Events"
@@ -21,6 +23,11 @@ const HomeScreen = () => {
           {
             defaultIcon: 'megaphone-outline',
             focusedIcon: 'megaphone',
+            headerRight: () => (
+              <TouchableOpacity style={{marginRight: 12}}>
+                <Icon name="funnel-outline" size={24} />
+              </TouchableOpacity>
+            ),
           } as BottomTabNavigationOptions
         }
       />
