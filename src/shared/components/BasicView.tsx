@@ -6,9 +6,9 @@ type BasicViewProps = {
 };
 
 const BasicView = ({children}: BasicViewProps) => (
-  <View style={{flex: 1, paddingHorizontal: 16, paddingVertical: 24}}>
-      {children}
-    </View>
+  <View style={{flex: 1, paddingHorizontal: 4, paddingVertical: 16}}>
+    {children}
+  </View>
 );
 
 export default BasicView;
