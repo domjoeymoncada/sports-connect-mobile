@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import BasicButton from '~/src/shared/components/BasicButton';
 import colors from '~/src/shared/constants/colors';
 
 // Updated once API will be done
