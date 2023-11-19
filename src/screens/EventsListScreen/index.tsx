@@ -8,7 +8,7 @@ import EventCard from './components/EventCard';
 import {SAMPLE_EVENTS} from '~/src/shared/sample_data/events';
 import colors from '~/src/shared/constants/colors';
 
-const EventsScreen = () => {
+const EventsListScreen = () => {
   return (
     <BasicView>
       <View
@@ -41,4 +41,4 @@ const EventsScreen = () => {
   );
 };
 
-export default EventsScreen;
+export default EventsListScreen;

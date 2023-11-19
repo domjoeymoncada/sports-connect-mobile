@@ -1,6 +1,6 @@
 import React from 'react';
 import ProfileScreen from './ProfileScreen';
-import EventsScreen from './EventsScreen';
+import EventsListScreen from './EventsListScreen';
 import {
   createBottomTabNavigator,
   BottomTabNavigationOptions,
@@ -18,7 +18,7 @@ const HomeScreen = () => {
       tabBar={props => <CustomBottomTabBar {...props} />}>
       <BottomTabNav.Screen
         name="Events"
-        component={EventsScreen}
+        component={EventsListScreen}
         options={
           {
             defaultIcon: 'megaphone-outline',
