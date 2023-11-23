@@ -1,7 +1,9 @@
+import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import colors from '~/src/shared/constants/colors';
+import routes from '~/src/shared/constants/routes';
 
 // Updated once API will be done
 type EventCardProps = {
@@ -26,10 +28,12 @@ const EventCard = ({event}: EventCardProps) => {
   const {title, organizer, date, location, numParticipants, maxParticipants} =
     event;
 
+  const navigation = useNavigation();
+
   return (
     <TouchableOpacity
       activeOpacity={0.8}
-      onPress={() => console.log('open this event')}>
+      onPress={() => navigation.navigate(routes.eventDetails)}>
       <View
         style={{
           borderRadius: 5,
