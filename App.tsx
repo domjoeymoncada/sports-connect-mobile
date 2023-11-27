@@ -5,6 +5,7 @@ import ProfileScreen from './src/screens/ProfileScreen';
 import routes from './src/shared/constants/routes';
 import WelcomeScreen from './src/screens/WelcomeScreen';
 import HomeScreen from './src/screens';
+import EventsDetailScreen from './src/screens/EventsDetailScreen';
 
 const App = () => {
   const StackNavigator = createNativeStackNavigator();
@@ -25,6 +26,10 @@ const App = () => {
         <StackNavigator.Screen
           name={routes.profile}
           component={ProfileScreen}
+        />
+        <StackNavigator.Screen
+          name={routes.eventDetails}
+          component={EventsDetailScreen}
         />
       </StackNavigator.Navigator>
     </NavigationContainer>
